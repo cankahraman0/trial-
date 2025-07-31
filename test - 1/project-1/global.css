@@ -1,0 +1,89 @@
+/* her tarafta kullanacagımız classlarımız var ise bunları burada ekleyebiliriz*/
+
+
+/* Text */
+.text-center {
+    text-align: center;
+}
+
+
+
+/* Heading Font size */
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+
+
+
+/* Colors */
+.bg-dark-sea {
+    background-color: cadetblue;
+}
+
+.bg-light-sea {
+    background-color: skyblue;
+}
+
+
+
+
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* buttons */
+.btn {
+    margin-top: 1.25rem;
+    padding: 5px;
+    border-radius:7px ;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: seagreen;
+}
+
+.btn-primary:hover {
+    color:beige ;
+    background-color: seagreen;
+    border: 1px solid black;
+}
+
+
+.btn-block {
+    width: 100%;
+}
+
+
+
+
+.form-group {
+    padding: 0.25rem 0 ;
+
+}
+
+
+.form-control {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none; /*yeniden boyutlandırma özelligi*/
+    border-radius: 10px;
+}

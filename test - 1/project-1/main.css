@@ -1,0 +1,265 @@
+/*default özellikleri sıfırlayalım önce */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*sayfamızda verilen linklerin ilk başta stilleyelim*/
+a { 
+    text-decoration: none;
+    color: beige;
+}
+
+/* html sayfamızın genel yazı tipini belirleyelim*/
+html {
+    font-family: "Open Sans",sans-serif;
+}
+
+
+/* navbar içerigini şekillendirme */ 
+#navbar {
+    color: white;
+    display: flex; /* tüm alt elemanları yan yana getirmek için */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+
+
+/* navbar içerigindeki ul leri şekillendirme */ 
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* navbar içerigindeki ul lerin içerisindeki a ları  şekillendirme */ 
+#navbar ul li a {
+    padding: 0.5rem;
+}
+
+
+
+/* a ların üzerine gelindiginde özelleştirme */
+#navbar ul li a:hover {
+    background-color: steelblue ;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MAİN SECTİON BÖLÜMÜ */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+#home img {
+    max-width:50%; /* içinde bulundugu blogun hepsini kaplasin istiyoruz */
+    height: auto; /* widthe göre otomatik ayarlamak için*/ 
+    border-radius: 100%; /*heighta göre otomatik alarak tam oval yapar*/
+}
+
+#home .name h2 {
+    margin-bottom: 0.75rem;
+}
+
+#home .name p {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#home a {
+    margin-top: 1.25rem;
+    background-color: steelblue;
+    padding: 10px;
+    border-radius: 3rem;
+    letter-spacing: 0.5px;
+}
+
+#home a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+/* section 2 bölüm eğitimmler*/
+
+#training {
+    color: white;
+    padding: 1rem; /*iç boşluk*/
+
+}
+
+#training .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training .items .item {
+    width: 33%;
+    text-align: center;
+    padding:0.5rem;
+}
+
+#training .items .item:hover {
+    color: beige;
+    opacity: 0.7;
+    transform: scale(1.1); /* üzerine geldigimizde zoomlanması için */
+}
+
+#training .items h3 {
+    color: beige;
+}
+
+
+
+
+
+
+
+/* courses bölümü */
+
+
+#courses {
+    color: seagreen;
+    padding: 1rem;
+    text-align: center;
+}
+
+#courses .container .courses .course .course-image {
+    position: relative;
+}
+
+#courses .container .courses .course .course-image img {
+    height: 150px;
+    position: relative;
+
+}
+
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+
+.courses .course {
+    display: flex;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+
+#courses .course .course-image span {
+    background: beige;
+    padding: 0.25rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.courses .course .course-info .title {
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin: 0.25rem;
+
+}
+
+.courses .course .course-info .description {
+    letter-spacing: 1.2px;
+    opacity: 0.5;
+    margin: 0.25rem;
+}
+
+.courses .course .course-info .instructor {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0.25rem;
+}
+
+.courses .course .course-info .rating {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    margin: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer kısımı */
+
+#contact {
+    color: white;
+    padding: 1rem ;
+}
+
+.form-group label {
+    display: block;
+}
+
+
+#contact .contact-form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#contact .contact-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    align-self: center; /* yatayda ortalama */
+}
+
+
+#contact .contact-form ul li a {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact .contact-form ul li a i:hover {
+    opacity: 0.5;
+    transform: scale(1.5);
+}
